@@ -45,4 +45,4 @@ This repository contains a geospatial dashboard for Toms River, NJ that estimate
 
 ## Notes
 
-This project is under active development. File names, workflow design, and model structure may continue to evolve as the data pipeline and dashboard are refined.
+This project is under active development. File names, workflow design, and model structure will evolve as the data pipeline and dashboard are refined.
