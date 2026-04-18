@@ -17,3 +17,12 @@ A GeoTIFF is a common geospatial raster file format. It stores both the raster v
 
 ### Why DEM data matters here
 The DEM will help measure ground elevation across Toms River so I can compare parcels, flood zones, and eventually housing-related cost burdens. It is one of the main inputs for building parcel-level flood and insurance context.
+
+
+
+
+NOtes: flood and parcel data are usually vectors that store discrete shapes. DEM data are cells with a figure. 
+parcel data comes as a gdb
+flood data comes as shapefile
+DEM data comes as GeoTIFF
+
