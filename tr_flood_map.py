@@ -15,7 +15,6 @@ Output:
 """
 
 from pathlib import Path
-
 import folium
 import geopandas as gpd
 from pyogrio import read_dataframe
