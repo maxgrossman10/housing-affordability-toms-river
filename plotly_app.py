@@ -17,12 +17,9 @@ Output:
 """
 
 from pathlib import Path
-import json
 import geopandas as gpd
 import pandas as pd
 import folium
-from dash import Dash, html
-import dash_leaflet as dl
 from pyogrio import read_dataframe
 
 # Path to the local geodatabase containing Ocean County parcel and MOD-IV data.
