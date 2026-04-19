@@ -1,6 +1,6 @@
 # Housing Affordability in Toms River, NJ
 
-![Project screenshot](images/tr_pic.png)
+![Project screenshot](images/git_parc_fl_elev_pic.png)
 
 This repository documents an in-progress geospatial analysis project focused on housing affordability in Toms River, New Jersey.
 
