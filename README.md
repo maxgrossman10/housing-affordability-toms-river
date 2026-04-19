@@ -76,8 +76,14 @@ The longer-term objective is to build a parcel-level affordability model that ca
 - FEMA flood-hazard polygons
 - USGS / 3DEP DEM elevation raster data
 
+## Status
+
+This project is under active development. The current code should be understood as the spatial and data-engineering foundation for a larger affordability and risk-analysis workflow, not a finished dashboard or finished model.
+
+
 ## Repository Structure
 
+```text 
 housing-affordability-toms-river/
 ├── README.md
 ├── field-notes/
@@ -92,6 +98,3 @@ housing-affordability-toms-river/
 │   └── tr_parcels_flood_elev.py
 └── outputs/
 
-## Status
-
-This project is under active development. The current code should be understood as the spatial and data-engineering foundation for a larger affordability and risk-analysis workflow, not a finished dashboard or finished model.
