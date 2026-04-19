@@ -78,7 +78,6 @@ The longer-term objective is to build a parcel-level affordability model that ca
 
 ## Repository Structure
 
-```text
 housing-affordability-toms-river/
 ├── README.md
 ├── field-notes/
