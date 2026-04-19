@@ -9,15 +9,13 @@ The goal is to estimate how much income remains after the full cost of homeowner
 At its current stage, the repository contains the early mapping and data-integration work needed to support that larger affordability model.
 
 ## What the project does right now
-
-The code in this repository currently does two core things:
-
-1. Builds a parcel-level map for Toms River using Ocean County parcel geometry and MOD-IV assessment data.
-   This includes parcel boundaries, address fields, tax values, sales values, and selected building-related attributes.
-
-2. Builds a FEMA flood-hazard map for Toms River by clipping FEMA flood-zone polygons to the township footprint and exporting the result as an interactive web map.
-
-These scripts establish the local spatial foundation for later affordability analysis, insurance-cost estimation, and dashboard development.
+- loads Ocean County parcel geometry for Toms River Township
+- joins selected MOD-IV property assessment attributes to parcel boundaries
+- clips FEMA flood-hazard polygons to the Toms River study area
+- downloads, merges, and clips DEM elevation raster data for the local area
+- identifies parcels intersecting mapped FEMA flood-hazard zones
+- computes parcel-level elevation statistics from the DEM
+- exports an interactive Folium map showing flood zones and flood-intersecting parcels
 
 ## Why this project exists
 
@@ -70,6 +68,30 @@ The longer-term objective is to build a parcel-level affordability model that ca
 - Estimate flood-insurance costs where direct premium data is missing
 - Add census tract and block group context
 - Develop an interactive Dash dashboard for exploration and comparison
+
+- ## Data Used So Far
+
+- Ocean County parcel geodatabase
+- Ocean County MOD-IV assessment data
+- FEMA flood-hazard polygons
+- USGS / 3DEP DEM elevation raster data
+
+## Repository Structure
+
+```text
+housing-affordability-toms-river/
+├── README.md
+├── field-notes/
+│   ├── project-log.md
+│   ├── data-sources.md
+│   └── methodology.md
+├── images/
+│   └── tr_pic.png
+├── src/
+│   ├── tr_parcel_map.py
+│   ├── tr_flood_map.py
+│   └── tr_parcels_flood_elev.py
+└── outputs/
 
 ## Status
 
