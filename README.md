@@ -17,6 +17,7 @@ At its current stage, the repository contains the early mapping and data-integra
 - identifies parcels located in mapped flood-hazard zones
 - calculates parcel-level elevation statistics from the DEM
 - exports an interactive Folium map for visual inspection and downstream analysis
+- estimates insurance premiums
 
 ## Why this project exists
 
@@ -37,7 +38,7 @@ This project is an attempt to build a more realistic affordability framework by 
 
 ## Project direction
 
-The longer-term objective is to build a parcel-level affordability model that can answer questions such as:
+The overall objective is to build a parcel-level Income Residual affordability model to answer questions such as:
 
 - How much income remains after major housing costs are paid?
 - How does affordability vary across neighborhoods and flood zones?
@@ -74,6 +75,7 @@ housing-affordability-toms-river/
 ├── src/
 │   ├── tr_parcel_map.py
 │   ├── tr_flood_map.py
-│   └── tr_parcels_flood_elev.py
+│   ├── tr_parcels_flood_elev.py
+|   └── insur_premium_estimate.py
 └── outputs/
 
